@@ -1,0 +1,207 @@
+@font-face {
+    font-family: 'hankenGrotesk';
+    src: url("../assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+}
+
+body{
+    font-family: 'hankenGrotesk';
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.wrapper{
+    width: 375px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.square{
+    background: linear-gradient(to bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+    border-radius: 0 0 25px 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+}
+
+.square .mainTitle {
+    color: hsl(241, 100%, 89%);
+    font-size: 18px;
+    margin-bottom: 30px;
+}
+
+.circle{
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    background: linear-gradient(to bottom, hsla(256, 72%, 46%, 1), hsla(241, 72%, 46%, 0));
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.circle span{
+    color: hsl(221, 100%, 96%);
+    font-weight: 800;
+    font-size: 55px;
+}
+
+.circle p{
+    color: hsl(241, 100%, 89%);
+    font-size: 14px;
+    line-height: .2;
+}
+
+.info{
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: hsl(241, 100%, 89%);
+}
+
+.info .subTitle{
+    color: hsl(0, 0%, 100%);
+    font-size: 25px;
+}
+
+.info p{
+    margin: -10px 0 25px 0;
+}
+
+.summary h3{
+    font-size: 18px;
+    margin-bottom: 25px;
+}
+
+.traits{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 310px;
+    height: 65px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.icon{
+    margin: 20px 15px;
+}
+
+.icon img{
+    margin-right: 10px;
+}
+
+.icon h4{
+    font-size: 16px;
+    display: inline;
+}
+
+.red{ color: hsl(0, 100%, 67%);}
+.liteRed{ background-color: hsla(0, 100%, 67%, 5%);}
+
+.yellOran{ color: hsl(39, 100%, 56%);}
+.yellow{ background-color: hsla(39, 100%, 56%, 5%);}
+
+.teal{ color: hsl(166, 100%, 37%);}
+.liteTeal{ background-color: hsla(166, 100%, 37%, 5%);}
+
+.cobBlue{ color: hsl(234, 85%, 45%);}
+.blue{ background-color: hsla(234, 85%, 45%, 5%);}
+
+.score{
+    margin: 10px 20px 0 0;
+}
+
+.score p{
+    color: hsl(241, 100%, 89%);
+    font-size: 16px;
+    font-weight: 800;
+}
+
+.score span{
+    color: hsl(224, 30%, 27%);
+}
+
+.button {
+    display: inline-block;
+    border: none;
+    text-decoration: none;
+    padding: 20px 120px;
+    border-radius: 50px;
+    background-color: hsl(224, 30%, 27%);    
+    color: hsl(0, 0%, 100%);
+    font-weight: 700;
+    cursor: pointer;
+    margin: 15px 0 20px 0;
+    transition: background-color 300ms ease-in;
+}
+
+.button:hover {
+    background-color: hsl(241, 81%, 54%);
+}
+
+
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+@media screen and (min-width: 1440px){
+    
+    .wrapper{        
+        margin: 8% auto;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        border-radius: 25px;      
+        overflow: hidden;
+        width: 750px;
+        box-shadow: 5px 5px 10px 0px rgba(212,212,212,0.75);
+    }
+
+    .square{
+        align-content: space-between;
+        border-radius: 0 25px 25px 0;        
+        padding: 10px 25px;
+        width: 300px;
+        height: 500px;
+    }
+
+    .square .mainTitle {
+        color: hsl(241, 100%, 89%);
+        font-size: 22px;
+        margin-bottom: 30px;
+    }
+
+    .circle{
+        width: 200px;
+        height: 200px;
+        margin-bottom: 10px;
+    }
+
+    .circle span{
+        color: hsl(221, 100%, 96%);
+        font-weight: 800;
+        font-size: 70px;
+    }
+    
+    .circle p{
+        color: hsl(241, 100%, 89%);
+        font-size: 18px;
+        line-height: .2;
+        text-align: center;
+    }
+
+    .summary{
+        width: 350px;
+    }
+    
+}
